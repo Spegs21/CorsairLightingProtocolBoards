@@ -1,0 +1,74 @@
+menu.opt=Optimize
+menu.debug=Debug
+menu.device=Device
+
+################################################################################
+# Arduino Zero (Native USB Port) (SAMD21) Configuration
+################################################################################
+
+
+
+################################################################################
+# Adafruit Trinket M0 (SAMD21) Configuration
+################################################################################
+adafruit_trinket_m0clp.name=CLP Adafruit Trinket M0
+adafruit_trinket_m0clp.vid.0=0x239A
+adafruit_trinket_m0clp.pid.0=0x801E
+adafruit_trinket_m0clp.vid.1=0x239A
+adafruit_trinket_m0clp.pid.1=0x001E
+adafruit_trinket_m0clp.upload.tool=arduino:bossac
+adafruit_trinket_m0clp.upload.protocol=sam-ba
+adafruit_trinket_m0clp.upload.maximum_size=262144
+adafruit_trinket_m0clp.upload.offset=0x2000
+adafruit_trinket_m0clp.upload.use_1200bps_touch=true
+adafruit_trinket_m0clp.upload.wait_for_upload_port=true
+adafruit_trinket_m0clp.upload.native_usb=true
+adafruit_trinket_m0clp.build.mcu=cortex-m0plus
+adafruit_trinket_m0clp.build.f_cpu=48000000L
+adafruit_trinket_m0clp.build.usb_product="Trinket M0"
+adafruit_trinket_m0clp.build.usb_manufacturer="Adafruit"
+adafruit_trinket_m0clp.build.board=TRINKET_M0
+adafruit_trinket_m0clp.build.core=adafruit:arduino
+adafruit_trinket_m0clp.build.extra_flags=-DCRYSTALLESS -DADAFRUIT_TRINKET_M0 -D__SAMD21E18A__ -DARM_MATH_CM0PLUS {build.usb_flags}
+adafruit_trinket_m0clp.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+adafruit_trinket_m0clp.build.openocdscript=openocd_scripts/trinket_m0.cfg
+adafruit_trinket_m0clp.build.variant=adafruit:trinket_m0
+adafruit_trinket_m0clp.build.variant_system_lib=
+adafruit_trinket_m0clp.build.vid=0x1b1c
+adafruit_trinket_m0clp.bootloader.tool=adafruit:openocd
+adafruit_trinket_m0clp.bootloader.file=trinketm0/bootloader-trinket_m0-v2.0.0-adafruit.5.bin
+adafruit_trinket_m0clp.menu.opt.small=Small (-Os) (standard)
+adafruit_trinket_m0clp.menu.opt.small.build.flags.optimize=-Os
+adafruit_trinket_m0clp.menu.opt.fast=Fast (-O2)
+adafruit_trinket_m0clp.menu.opt.fast.build.flags.optimize=-O2
+adafruit_trinket_m0clp.menu.opt.faster=Faster (-O3)
+adafruit_trinket_m0clp.menu.opt.faster.build.flags.optimize=-O3
+adafruit_trinket_m0clp.menu.opt.fastest=Fastest (-Ofast)
+adafruit_trinket_m0clp.menu.opt.fastest.build.flags.optimize=-Ofast
+adafruit_trinket_m0clp.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+adafruit_trinket_m0clp.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+adafruit_trinket_m0clp.menu.debug.off=Off
+adafruit_trinket_m0clp.menu.debug.on=On
+adafruit_trinket_m0clp.menu.debug.on.build.flags.debug=-g
+
+# devices
+adafruit_trinket_m0clp.menu.device.lnp=Lighting Node PRO
+adafruit_trinket_m0clp.menu.device.lnp.build.pid=0x0c0b
+adafruit_trinket_m0clp.menu.device.lnp.build.usb_product="Lighting Node PRO"
+adafruit_trinket_m0clp.menu.device.lnp.build.usb_manufacturer="Corsair"
+adafruit_trinket_m0clp.menu.device.cp=Commander PRO
+adafruit_trinket_m0clp.menu.device.cp.build.pid=0x0c10
+adafruit_trinket_m0clp.menu.device.cp.build.usb_product="Commander PRO"
+adafruit_trinket_m0clp.menu.device.cp.build.usb_manufacturer="Corsair"
+adafruit_trinket_m0clp.menu.device.lnc=Lighting Node CORE
+adafruit_trinket_m0clp.menu.device.lnc.build.pid=0x0c1a
+adafruit_trinket_m0clp.menu.device.lnc.build.usb_product="Lighting Node CORE"
+adafruit_trinket_m0clp.menu.device.lnc.build.usb_manufacturer="Corsair"
+adafruit_trinket_m0clp.menu.device.slc=Smart Lighting Controller (LS100)
+adafruit_trinket_m0clp.menu.device.slc.build.pid=0x0c1e
+adafruit_trinket_m0clp.menu.device.slc.build.usb_product="Smart Lighting Controller"
+adafruit_trinket_m0clp.menu.device.slc.build.usb_manufacturer="Corsair"
+adafruit_trinket_m0clp.menu.device.slt=Smart Lighting Towers (LT100)
+adafruit_trinket_m0clp.menu.device.slt.build.pid=0x0c23
+adafruit_trinket_m0clp.menu.device.slt.build.usb_product="Smart Lighting Towers"
+adafruit_trinket_m0clp.menu.device.slt.build.usb_manufacturer="Corsair"
