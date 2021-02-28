@@ -236,6 +236,10 @@
                     "help": {
                         "online": "https://github.com/Legion2/CorsairLightingProtocolBoards"
                     },
+                    "url": "https://github.com/Spegs21/CorsairLightingProtocolBoards/releases/download/samd-0.3.0/CorsairLightingProtocolBoards-samd-0.3.0.zip",
+                    "archiveFileName": "CorsairLightingProtocolBoards-samd-0.3.0.zip",
+                    "checksum": "SHA-256:9ad78907df08e5efccdeb721dc0842e7d415a719b835289a31c9206a1bfb3627",
+                    "size": "2138",
                     "boards": [
                         {
                             "name": "CLP Arduino Zero (Native USB Port)"
